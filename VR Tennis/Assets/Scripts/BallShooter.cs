@@ -30,21 +30,21 @@ public class BallShooter : MonoBehaviour
 
         while (runBallMachine)
         {
-            Debug.Log("shoot ball");
+  //          Debug.Log("shoot ball");
 
             GameObject[] balls = GameObject.FindGameObjectsWithTag("Shoot Ball");
 
 
-            foreach (GameObject b in balls)
+/*            foreach (GameObject b in balls)
             {
                 GameObject.Destroy(b);
-            }
+            }*/
 
             Rigidbody spawnBall = Instantiate(ball, transform.position, transform.rotation);
             spawnBall.tag = "Shoot Ball";
 
             Vector3 dir = (aimTarget.position - transform.position); // get the direction to where we want to send the ball
-            Debug.Log("Ball direction " + dir + " normalized = " + dir.normalized);
+//            Debug.Log("Ball direction " + dir + " normalized = " + dir.normalized);
             spawnBall.velocity = dir.normalized * ballForce + new Vector3(0, upForce, 0);
 
             yield return wait;
