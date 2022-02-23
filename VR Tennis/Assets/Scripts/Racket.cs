@@ -103,7 +103,7 @@ public class Racket : MonoBehaviour
 
             // do the bounce based on how fast the ball is coming towards the racket
             // it should bounce back at this but flipped in the
-            //  racke  x axis
+            //  racket  x axis
             // TODO: You need to fix this so that it also calculates the rotational velocity of the racket head
             // and then uses that to estimate the speed of motion of the racket at the hit point
             Vector3 incomingVelocity=ball.velocity - velocity;
