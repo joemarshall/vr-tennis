@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runBallMachine: 1
   ball: {fileID: 223974232}
-  ballForce: 22
+  ballForce: 20
   upForce: 8
   aimTarget: {fileID: 574755006}
 --- !u!65 &1018780858
