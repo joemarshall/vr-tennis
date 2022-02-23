@@ -1113,6 +1113,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Velocity",
+            "id": "34fb282f-df95-434c-9b8b-4ea665bf1b00",
+            "actions": [
+                {
+                    "name": "RightVelocity",
+                    "type": "Button",
+                    "id": "aa8963d9-61b2-4fd3-b744-ef93829ddbf4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftVelocity",
+                    "type": "Button",
+                    "id": "e2815400-fd94-45ad-b3ca-070b90cb3640",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cb253a52-26cd-457f-887d-2155c6250c6f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb9aa2bb-3596-44ff-af61-55273072b0dc",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

@@ -6,6 +6,8 @@ public class DrawHelper
 {
     private GameObject gameObject;
 
+    private LineRenderer lr;
+
     public DrawHelper(GameObject gameObject)
     {
         this.gameObject = gameObject;
@@ -15,7 +17,6 @@ public class DrawHelper
     {
         if (start == end) return;
 
-        LineRenderer lr;
         lr = gameObject.GetComponent<LineRenderer>();
         if (lr == null)
         {
@@ -37,5 +38,10 @@ public class DrawHelper
         // positions[2] = new Vector3(2.0f, -2.0f, 0.0f);
         lr.positionCount = positions.Length;
         lr.SetPositions(positions);
+    }
+
+    public void ClearLine()
+    {
+        lr.positionCount = 0;
     }
 }
